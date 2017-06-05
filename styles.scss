@@ -1,12 +1,12 @@
-$color1: rgb(0,255,204);
-$color2: rgb(0,204,204);
-$color3: rgb(255,215,0);
+$color1: rgb(217,245,232);
+$color2: rgb(55,203,194);
+$color3: rgb(255,187,51);
 $color4: rgb(255,99,71);
+$amount: 7%;
 
 .primary-container {
   height: 280px;
   width: 20%;
-  border: 1px solid black;
   float: left;
   margin-left: 2%;
   margin-right: 2%;
@@ -31,4 +31,181 @@ $color4: rgb(255,99,71);
 .primary-color4 {
   height: 55%;
   background-color: $color4;
+}
+
+
+
+.tone {
+  height: 154px;
+  width: 20%;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 100px;
+}
+.tint {
+  width: 33.33%;
+  height:100%;
+  float: left;
+}
+
+.mint-1 {
+  background-color: lighten($color1, $amount )
+}
+.mint-2 {
+  background-color: $color1;
+}
+.mint-3 {
+  background-color: darken($color1, $amount)
+}
+
+
+.teal-1 {
+  background-color: lighten($color2, $amount)
+}
+.teal-2 {
+  background-color: $color2;
+}
+.teal-3 {
+  background-color: darken($color2, $amount)
+}
+
+.gold-1 {
+  background-color: lighten($color3, $amount)
+}
+.gold-2 {
+  background-color: $color3;
+}
+.gold-3 {
+  background-color: darken($color3, $amount);
+}
+
+.tomato-1 {
+  background-color: lighten($color4, $amount);
+}
+.tomato-2 {
+  background-color: $color4;
+}
+.tomato-3 {
+  background-color: darken($color4, $amount)
+}
+
+.column {
+  height: 800px;
+  width: 20%;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
+.column1 > .mixed-1 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color1, $color1, 35%);
+}
+.column1 > .mixed-2 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color1, $color2, 35%);
+}
+
+.column1 > .mixed-3 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color1, $color3, 35%);
+}
+
+.column1 > .mixed-4 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color1, $color4, 35%);
+}
+
+.column2 > .mixed-1 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color2, $color1, 35%);
+}
+.column2 > .mixed-2 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color2, $color2, 35%);
+}
+
+.column2 > .mixed-3 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color2, $color3, 35%);
+}
+
+.column2 > .mixed-4 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color2, $color4, 35%);
+}
+.column3 > .mixed-1 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color3, $color1, 35%);
+}
+.column3 > .mixed-2 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color3, $color2, 35%);
+}
+
+.column3 > .mixed-3 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color3, $color3, 35%);
+}
+
+.column3 > .mixed-4 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color3, $color4, 35%);
+}
+.column4 > .mixed-1 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color4, $color1, 35%);
+}
+.column4 > .mixed-2 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color4, $color2, 35%);
+}
+
+.column4 > .mixed-3 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color4, $color3, 65%);
+}
+
+.column4 > .mixed-4 {
+  height: 45px;
+  width: 100%;
+  background-color: mix($color4, $color4, 65%);
+}
+
+.master-mint {
+  background-color: $color1;
+  @extend .mini;
+}
+.master-teal {
+  background-color: $color2;
+  @extend .mini;
+}
+.master-gold {
+  background-color: $color3;
+  @extend.mini;
+}
+.master-tomato {
+  background-color: $color4;
+  @extend .mini;
+}
+.mini {
+  height: 154px;
+  width: 100%;
 }

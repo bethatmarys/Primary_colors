@@ -1,0 +1,27 @@
+.primary-container {
+  height: 280px;
+  width: 20%;
+  border: 1px solid black;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%; }
+  .primary-container span {
+    float: right; }
+
+.primary-color1 {
+  height: 55%;
+  background-color: #00ffcc; }
+
+.primary-color2 {
+  height: 55%;
+  background-color: #00cccc; }
+
+.primary-color3 {
+  height: 55%;
+  background-color: gold; }
+
+.primary-color4 {
+  height: 55%;
+  background-color: tomato; }
+
+/*# sourceMappingURL=output.css.map */
